@@ -2,12 +2,13 @@
   "name": "weather",
   "version": "1.0.0",
   "description": "",
-  
+  "homepage": "https://yashureddyB.github.io/weatherwebsite",
   "scripts": {
-  "start": "parcel src/index.html",
-  "build": "parcel build src/index.html"
-}
-,
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "parcel": "^2.16.0"
+    "parcel": "^2.16.0",
+    "gh-pages": "^7.2.0"
   }
 }
